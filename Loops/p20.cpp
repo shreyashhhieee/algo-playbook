@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std; 
+
+void print20(int n){
+    for(int i=1; i<=n-1; i++){
+        for(int j=1; j<=i; j++){
+            cout << "*";
+        }
+        for(int j=1;  j<=2*n - 2*i; j++){
+            cout << " ";
+        }
+        for (int j=1; j<=i;j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+    
+    for (int i=1; i<=2*n; i++){
+        cout << "*";
+    }
+    cout<< endl;
+    for(int i=1; i<=n-1; i++){
+        for(int j=1; j<=n-i; j++){
+            cout << "*";
+        }
+        for(int j=1; j<=2*i; j++){
+            cout << " ";
+        }
+        for(int j=1; j<=n-i; j++){
+            cout << "*";
+        }
+        cout << endl;
+    }
+        
+}
+int main(){
+    int n;
+    cin >> n;
+    print20(n);
+}
+
+
+
+
+
+
+
